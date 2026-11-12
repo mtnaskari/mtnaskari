@@ -20,6 +20,7 @@ Software engineer from Isfahan, working on backends, systems and the occasional 
 <br>
 
 <a href="https://github.com/mtnaskari/goraz"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-goraz-dark.svg"><img alt="goraz: encrypted secrets, tokens and passwords for Go" src="assets/project-goraz-light.svg" width="49.5%"></picture></a>
+<a href="https://github.com/mtnaskari/kabot"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-kabot-dark.svg"><img alt="kabot: a website message box that delivers to Telegram and Bale" src="assets/project-kabot-light.svg" width="49.5%"></picture></a>
 <a href="https://github.com/mtnaskari/shop-api"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-shop-api-dark.svg"><img alt="shop-api: coffee shop REST API" src="assets/project-shop-api-light.svg" width="49.5%"></picture></a>
 
 <a href="https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3Amtnaskari+-user%3Amtnaskari">
