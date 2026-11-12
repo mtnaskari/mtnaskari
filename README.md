@@ -5,7 +5,7 @@
 
 ### <samp>&gt; Hi, I'm Matin Askari · متین عسکری</samp>
 
-Software engineer from Isfahan, working on backends, systems and the occasional messaging bot: APIs, web apps and services kept clear, reliable and easy to extend. Lately I spend my spare hours fixing bugs in open-source Go and Node.js projects.
+Software engineer from Isfahan, working on backends, systems and the occasional messaging bot: APIs, web apps and services kept clear, reliable and easy to extend. Lately I spend my spare hours fixing bugs in open-source Go and Node.js projects. Currently building [goraz](https://github.com/mtnaskari/goraz), an encrypted secrets store for Go.
 
 <a href="https://www.askari.pro/en"><img alt="askari.pro" src="https://img.shields.io/badge/askari.pro-d23a2c?style=flat-square&logo=googlechrome&logoColor=white"></a>
 <a href="https://www.askari.pro/fa"><img alt="askari.pro/fa" src="https://img.shields.io/badge/%D9%81%D8%A7%D8%B1%D8%B3%DB%8C-121212?style=flat-square"></a>
@@ -18,22 +18,22 @@ Software engineer from Isfahan, working on backends, systems and the occasional 
 
 <br>
 
-#### <samp>Projects</samp>
-
-<a href="https://github.com/mtnaskari/goraz"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/goraz-dark.svg"><img alt="goraz: encrypted secrets, API tokens and passwords for Go services and the command line" src="cards/goraz-light.svg" width="100%"></picture></a>
-
+<a href="https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3Amtnaskari+-user%3Amtnaskari">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
   <img alt="GitHub stats: commits, contributions, pull requests and stars" src="assets/stats-light.svg" width="100%">
 </picture>
+</a>
 
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/streak-dark.svg"><img alt="Contribution streak" src="assets/streak-light.svg" width="49.5%"></picture>
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/languages-dark.svg"><img alt="Most used languages" src="assets/languages-light.svg" width="49.5%"></picture>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg">
-  <img alt="Pull requests merged into open-source projects" src="assets/oss-light.svg" width="100%">
-</picture>
+#### <samp>Merged upstream</samp>
+
+<!-- OSS:START -->
+- [**redis/go-redis**](https://github.com/redis/go-redis) <samp>★ 22k</samp> &nbsp; [refactor(command): track key-spec fields in a bitmask #4278](https://github.com/redis/go-redis/pull/4278)
+- [**testcontainers/testcontainers-go**](https://github.com/testcontainers/testcontainers-go) <samp>★ 5k</samp> &nbsp; [feat(dynamodb): add WithInMemory option #4094](https://github.com/testcontainers/testcontainers-go/pull/4094)
+<!-- OSS:END -->
 
 #### <samp>Latest writing</samp>
 

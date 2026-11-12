@@ -108,7 +108,7 @@ async function loadStats() {
     `query($q: String!) {
       search(query: $q, type: ISSUE, first: 50) {
         issueCount
-        nodes { ... on PullRequest { title url mergedAt repository { nameWithOwner stargazerCount } } }
+        nodes { ... on PullRequest { number title url mergedAt repository { nameWithOwner stargazerCount url } } }
       }
     }`,
     { q: `is:pr is:merged author:${LOGIN} -user:${LOGIN} sort:updated-desc` },
@@ -264,6 +264,15 @@ function languagesCard(t, s) {
 `;
 }
 
+function updateUpstream(readme, s) {
+  const rows = s.notable.map(
+    pr =>
+      `- [**${pr.repository.nameWithOwner}**](${pr.repository.url}) <samp>★ ${compact(pr.repository.stargazerCount)}</samp> &nbsp; [${pr.title.replace(/[[\]]/g, '')} #${pr.number}](${pr.url})`,
+  );
+  if (!rows.length) return readme;
+  return readme.replace(/(<!-- OSS:START -->)[\s\S]*?(<!-- OSS:END -->)/, `$1\n${rows.join('\n')}\n$2`);
+}
+
 async function updateWriting(readme) {
   const xml = await (await fetch('https://www.askari.pro/rss.xml')).text();
   const unxml = v => v.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").trim();
@@ -282,9 +291,8 @@ const stats = await loadStats();
 for (const [name, theme] of Object.entries(THEMES)) {
   await writeFile(`assets/header-${name}.svg`, headerCard(theme));
   await writeFile(`assets/stats-${name}.svg`, statsCard(theme, stats));
-  await writeFile(`assets/oss-${name}.svg`, ossCard(theme, stats));
   await writeFile(`assets/streak-${name}.svg`, streakCard(theme, stats));
   await writeFile(`assets/languages-${name}.svg`, languagesCard(theme, stats));
 }
-await writeFile('README.md', await updateWriting(await readFile('README.md', 'utf8')));
+await writeFile('README.md', updateUpstream(await updateWriting(await readFile('README.md', 'utf8')), stats));
 console.log(JSON.stringify({ ...stats, notable: stats.notable.map(p => p.repository.nameWithOwner), streak: { ...stats.streak, last: undefined } }));
