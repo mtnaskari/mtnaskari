@@ -1,6 +1,6 @@
 // Builds the profile cards in assets/ from live GitHub data.
 // Runs daily in .github/workflows/profile-cards.yml; needs GITHUB_TOKEN.
-import { writeFile } from 'node:fs/promises';
+import { readFile, writeFile } from 'node:fs/promises';
 
 const LOGIN = process.env.PROFILE_LOGIN ?? 'mtnaskari';
 const TOKEN = process.env.GITHUB_TOKEN;
@@ -43,17 +43,63 @@ async function loadStats() {
     { login: LOGIN },
   );
 
-  // Commits for every year since the account was created
+  // Commits and daily contributions for every year since the account was created
   let commits = 0;
+  let allContributions = 0;
+  const days = [];
   for (let year = new Date(user.createdAt).getUTCFullYear(); year <= new Date().getUTCFullYear(); year++) {
     const { user: y } = await gql(
       `query($login: String!, $from: DateTime!, $to: DateTime!) {
-        user(login: $login) { contributionsCollection(from: $from, to: $to) { totalCommitContributions restrictedContributionsCount } }
+        user(login: $login) {
+          contributionsCollection(from: $from, to: $to) {
+            totalCommitContributions restrictedContributionsCount
+            contributionCalendar { totalContributions weeks { contributionDays { date contributionCount } } }
+          }
+        }
       }`,
       { login: LOGIN, from: `${year}-01-01T00:00:00Z`, to: `${year}-12-31T23:59:59Z` },
     );
-    commits += y.contributionsCollection.totalCommitContributions + y.contributionsCollection.restrictedContributionsCount;
+    const c = y.contributionsCollection;
+    commits += c.totalCommitContributions + c.restrictedContributionsCount;
+    allContributions += c.contributionCalendar.totalContributions;
+    for (const w of c.contributionCalendar.weeks) days.push(...w.contributionDays);
   }
+
+  const today = new Date().toISOString().slice(0, 10);
+  const past = [...new Map(days.map(d => [d.date, d])).values()]
+    .filter(d => d.date <= today)
+    .sort((a, b) => a.date.localeCompare(b.date));
+  let longest = 0;
+  let run = 0;
+  for (const d of past) {
+    run = d.contributionCount > 0 ? run + 1 : 0;
+    longest = Math.max(longest, run);
+  }
+  // Today without a contribution yet does not break the streak
+  let current = 0;
+  for (let i = past.length - 1; i >= 0; i--) {
+    if (past[i].contributionCount > 0) current++;
+    else if (i === past.length - 1) continue;
+    else break;
+  }
+
+  const { user: langUser } = await gql(
+    `query($login: String!) {
+      user(login: $login) {
+        repositories(ownerAffiliations: OWNER, isFork: false, first: 100) {
+          nodes { languages(first: 10, orderBy: { field: SIZE, direction: DESC }) { edges { size node { name } } } }
+        }
+      }
+    }`,
+    { login: LOGIN },
+  );
+  const sizes = new Map();
+  for (const repo of langUser.repositories.nodes)
+    for (const e of repo.languages.edges) sizes.set(e.node.name, (sizes.get(e.node.name) ?? 0) + e.size);
+  const ignored = new Set(['HTML', 'CSS', 'SCSS', 'Dockerfile', 'Shell', 'Makefile', 'PLpgSQL', 'Procfile']);
+  const ranked = [...sizes].filter(([n]) => !ignored.has(n)).sort((a, b) => b[1] - a[1]);
+  const langTotal = ranked.reduce((sum, [, size]) => sum + size, 0) || 1;
+  const languages = ranked.filter(([, size]) => size / langTotal >= 0.01).slice(0, 6).map(([name, size]) => ({ name, share: size / langTotal }));
 
   const prs = await gql(`query($q: String!) { search(query: $q, type: ISSUE) { issueCount } }`, {
     q: `is:pr author:${LOGIN}`,
@@ -79,6 +125,8 @@ async function loadStats() {
     mergedUpstream: notable.length,
     stars: user.repositories.nodes.reduce((sum, r) => sum + r.stargazerCount, 0),
     notable: notable.slice(0, 4),
+    streak: { current, longest, allContributions, since: new Date(user.createdAt).getUTCFullYear(), last: past.slice(-30) },
+    languages,
   };
 }
 
@@ -158,10 +206,85 @@ function ossCard(t, s) {
 `;
 }
 
+function streakCard(t, s) {
+  const { current, longest, allContributions, since, last } = s.streak;
+  const max = Math.max(1, ...last.map(d => d.contributionCount));
+  const bars = last
+    .map((d, i) => {
+      const h = d.contributionCount ? 6 + (d.contributionCount / max) * 38 : 3;
+      return `<rect x="${36 + i * 12.2}" y="${170 - h}" width="8" height="${h}" rx="2" fill="${d.contributionCount ? t.accent : t.line}"/>`;
+    })
+    .join('');
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="432" height="200" viewBox="0 0 432 200" role="img" aria-label="Contribution streak: ${current} days">
+  <rect width="432" height="200" rx="20" fill="${t.bg}"/>
+  <rect x="0.5" y="0.5" width="431" height="199" rx="19.5" fill="none" stroke="${t.line}"/>
+  ${star(42, 38, 6, t.accent)}
+  <text x="56" y="43" fill="${t.muted}" font-family="${MONO}" font-size="13" letter-spacing="1.5">STREAK</text>
+  <text x="36" y="100" fill="${t.ink}" font-family="${SANS}" font-size="46" font-weight="700" letter-spacing="-1.5">${current}<tspan font-size="16" font-weight="600" letter-spacing="0" fill="${t.muted}" dx="8">day${current === 1 ? '' : 's'} in a row</tspan></text>
+  <text x="396" y="76" text-anchor="end" fill="${t.ink}" font-family="${SANS}" font-size="15" font-weight="600">${longest} days</text>
+  <text x="396" y="94" text-anchor="end" fill="${t.muted}" font-family="${MONO}" font-size="11.5">longest</text>
+  ${bars}
+  <text x="36" y="188" fill="${t.muted}" font-family="${MONO}" font-size="11">last 30 days · ${compact(allContributions)} contributions since ${since}</text>
+</svg>
+`;
+}
+
+function languagesCard(t, s) {
+  const width = 360;
+  let x = 36;
+  const shades = [t.accent, t.ink, t.muted, t.muted, t.line, t.line];
+  const opacity = [1, 1, 1, 0.6, 1, 0.6];
+  const bar = s.languages
+    .map((l, i) => {
+      const w = Math.max(3, l.share * width);
+      const seg = `<rect x="${x}" y="64" width="${w}" height="12" fill="${shades[i]}" fill-opacity="${opacity[i]}"/>`;
+      x += w;
+      return seg;
+    })
+    .join('');
+  const list = s.languages
+    .map((l, i) => {
+      const cx = 36 + (i % 2) * 184;
+      const cy = 116 + Math.floor(i / 2) * 30;
+      return `<circle cx="${cx + 5}" cy="${cy - 4}" r="5" fill="${shades[i]}" fill-opacity="${opacity[i]}"/>
+  <text x="${cx + 18}" y="${cy}" fill="${t.ink}" font-family="${SANS}" font-size="14" font-weight="600">${esc(l.name)}</text>
+  <text x="${cx + 168}" y="${cy}" text-anchor="end" fill="${t.muted}" font-family="${MONO}" font-size="12">${(l.share * 100).toFixed(1)}%</text>`;
+    })
+    .join('\n  ');
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="432" height="200" viewBox="0 0 432 200" role="img" aria-label="Most used languages">
+  <defs><clipPath id="bar"><rect x="36" y="64" width="${width}" height="12" rx="6"/></clipPath></defs>
+  <rect width="432" height="200" rx="20" fill="${t.bg}"/>
+  <rect x="0.5" y="0.5" width="431" height="199" rx="19.5" fill="none" stroke="${t.line}"/>
+  ${star(42, 38, 6, t.accent)}
+  <text x="56" y="43" fill="${t.muted}" font-family="${MONO}" font-size="13" letter-spacing="1.5">LANGUAGES</text>
+  <g clip-path="url(#bar)">${bar}</g>
+  ${list}
+  <text x="36" y="188" fill="${t.muted}" font-family="${MONO}" font-size="11">by code size · my own repositories</text>
+</svg>
+`;
+}
+
+async function updateWriting(readme) {
+  const xml = await (await fetch('https://www.askari.pro/rss.xml')).text();
+  const unxml = v => v.replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'").trim();
+  const items = [...xml.matchAll(/<item>([\s\S]*?)<\/item>/g)].slice(0, 4).map(([, item]) => {
+    const get = tag => unxml(item.match(new RegExp(`<${tag}>([\\s\\S]*?)</${tag}>`))?.[1] ?? '');
+    const date = new Date(get('pubDate'));
+    // Feed links have no locale prefix, which would redirect to the Persian site
+    const link = get('link').replace('https://www.askari.pro/blog/', 'https://www.askari.pro/en/blog/');
+    return `- <samp>${date.toISOString().slice(0, 10)}</samp> &nbsp; [${get('title').replace(/[[\]]/g, '')}](${link})`;
+  });
+  if (!items.length) return readme;
+  return readme.replace(/(<!-- WRITING:START -->)[\s\S]*?(<!-- WRITING:END -->)/, `$1\n${items.join('\n')}\n$2`);
+}
+
 const stats = await loadStats();
 for (const [name, theme] of Object.entries(THEMES)) {
   await writeFile(`assets/header-${name}.svg`, headerCard(theme));
   await writeFile(`assets/stats-${name}.svg`, statsCard(theme, stats));
   await writeFile(`assets/oss-${name}.svg`, ossCard(theme, stats));
+  await writeFile(`assets/streak-${name}.svg`, streakCard(theme, stats));
+  await writeFile(`assets/languages-${name}.svg`, languagesCard(theme, stats));
 }
-console.log(JSON.stringify({ ...stats, notable: stats.notable.map(p => p.repository.nameWithOwner) }));
+await writeFile('README.md', await updateWriting(await readFile('README.md', 'utf8')));
+console.log(JSON.stringify({ ...stats, notable: stats.notable.map(p => p.repository.nameWithOwner), streak: { ...stats.streak, last: undefined } }));
