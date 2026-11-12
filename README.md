@@ -5,7 +5,7 @@
 
 ### <samp>&gt; Hi, I'm Matin Askari · متین عسکری</samp>
 
-Software engineer from Isfahan, working on backends, systems and the occasional messaging bot: APIs, web apps and services kept clear, reliable and easy to extend. Lately I spend my spare hours fixing bugs in open-source Go and Node.js projects. Currently building [goraz](https://github.com/mtnaskari/goraz), an encrypted secrets store for Go.
+Software engineer from Isfahan, working on backends, systems and the occasional messaging bot: APIs, web apps and services kept clear, reliable and easy to extend. Lately I spend my spare hours fixing bugs in open-source Go and Node.js projects.
 
 <a href="https://www.askari.pro/en"><img alt="Website" src="https://img.shields.io/badge/askari.pro-portfolio-d23a2c?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=2b2a28"></a>
 <a href="https://www.askari.pro/fa"><img alt="Persian website" src="https://img.shields.io/badge/askari.pro-persian-d23a2c?style=for-the-badge&logo=googletranslate&logoColor=white&labelColor=2b2a28"></a>
@@ -18,6 +18,9 @@ Software engineer from Isfahan, working on backends, systems and the occasional 
 <img alt="Profile views" src="https://komarev.com/ghpvc/?username=mtnaskari&label=profile%20views&color=d23a2c&style=flat-square">
 
 <br>
+
+<a href="https://github.com/mtnaskari/goraz"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-goraz-dark.svg"><img alt="goraz: encrypted secrets, tokens and passwords for Go" src="assets/project-goraz-light.svg" width="49.5%"></picture></a>
+<a href="https://github.com/mtnaskari/shop-api"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-shop-api-dark.svg"><img alt="shop-api: coffee shop REST API" src="assets/project-shop-api-light.svg" width="49.5%"></picture></a>
 
 <a href="https://github.com/pulls?q=is%3Apr+is%3Amerged+author%3Amtnaskari+-user%3Amtnaskari">
 <picture>

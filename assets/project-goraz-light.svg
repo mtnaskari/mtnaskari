@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="128" viewBox="0 0 432 128" role="img" aria-label="goraz">
+  <rect width="432" height="128" rx="18" fill="#f3f1ee"/>
+  <rect x="0.5" y="0.5" width="431" height="127" rx="17.5" fill="none" stroke="#dedad4"/>
+  <svg x="22" y="24" width="76" height="76" viewBox="0 0 256 256"><path fill="#121212" fill-rule="evenodd" d="M30 216L40 138L48 104L62 118L70 84L86 100L98 66L112 88L128 58L142 92L206 140Q212 136 220 140L228 146Q234 150 232 158L228 176Q226 184 216 184L196 184Q176 212 140 218ZM150 200Q206 200 208 144Q198 184 168 186ZM127.5 126.9A10 10 0 1 1 136.5 126.9L140.0 142.0L124.0 142.0Z"/><path fill="#d23a2c" d="M127.5 126.9A10 10 0 1 1 136.5 126.9L140.0 142.0L124.0 142.0Z"/></svg>
+  <text x="112" y="44" fill="#121212" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.4">goraz</text>
+  <text x="112" y="70" fill="#6b6864" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14">Encrypted secrets, tokens and</text><text x="112" y="89" fill="#6b6864" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14">passwords for Go. No server.</text>
+  <circle cx="385.4" cy="39" r="5" fill="#00ADD8"/>
+  <text x="410" y="44" text-anchor="end" fill="#6b6864" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">Go</text>
+</svg>
