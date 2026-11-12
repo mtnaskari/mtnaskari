@@ -43,9 +43,9 @@ Software engineer from Isfahan, working on backends, systems and the occasional 
 
 <!-- WRITING:START -->
 - <samp>2026-11-06</samp> &nbsp; [Building a Telegram or Bale Bot for Your Business: From Idea to Payments](https://www.askari.pro/en/blog/build-telegram-bale-business-bot)
-- <samp>2026-11-06</samp> &nbsp; [What Is MCP? A Simple Guide to the Model Context Protocol and Its Security](https://www.askari.pro/en/blog/what-is-mcp)
-- <samp>2026-11-06</samp> &nbsp; [Will AI Agents Replace Software Developers? What Is Really Changing in 2026](https://www.askari.pro/en/blog/will-ai-agents-replace-developers)
-- <samp>2026-11-06</samp> &nbsp; [What Is Vibe Coding, and Why Do AI-Built Apps Break in Production?](https://www.askari.pro/en/blog/vibe-coding-in-production)
+- <samp>2026-11-01</samp> &nbsp; [Software Development Contracts: 12 Clauses That Prevent Disputes](https://www.askari.pro/en/blog/software-development-contract-clauses)
+- <samp>2026-10-26</samp> &nbsp; [What Is MCP? A Simple Guide to the Model Context Protocol and Its Security](https://www.askari.pro/en/blog/what-is-mcp)
+- <samp>2026-10-20</samp> &nbsp; [Software Project Contract and Delivery Checklist](https://www.askari.pro/en/blog/software-project-contract-checklist)
 <!-- WRITING:END -->
 
 #### <samp>Stack</samp>
