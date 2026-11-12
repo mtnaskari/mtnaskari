@@ -12,7 +12,7 @@
   <text x="203.4" y="84" fill="#f3f1ee" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600">Contributions</text>
   <text x="203.4" y="154" fill="#9a958f" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5">last 12 months</text>
   <line x1="344.8" y1="74" x2="344.8" y2="156" stroke="#2c2a28"/>
-  <text x="360.8" y="130" fill="#f3f1ee" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="-1.5">28</text>
+  <text x="360.8" y="130" fill="#f3f1ee" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="-1.5">10</text>
   <text x="361.8" y="84" fill="#f3f1ee" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600">Pull requests</text>
   <text x="361.8" y="154" fill="#9a958f" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5">opened</text>
   <line x1="503.20000000000005" y1="74" x2="503.20000000000005" y2="156" stroke="#2c2a28"/>
