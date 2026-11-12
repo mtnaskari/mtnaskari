@@ -4,7 +4,7 @@
   <path class="" d="M52 34 Q52 40 58 40 Q52 40 52 46 Q52 40 46 40 Q52 40 52 34 Z" fill="#d23a2c"/>
   <text x="66" y="45" fill="#6b6864" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1.5">BY THE NUMBERS</text>
   
-  <text x="44" y="130" fill="#121212" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="-1.5">1.2k</text>
+  <text x="44" y="130" fill="#121212" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="-1.5">1.3k</text>
   <text x="45" y="84" fill="#121212" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600">Commits</text>
   <text x="45" y="154" fill="#6b6864" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5">all time</text>
   <line x1="186.4" y1="74" x2="186.4" y2="156" stroke="#dedad4"/>
@@ -16,7 +16,7 @@
   <text x="361.8" y="84" fill="#121212" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600">Pull requests</text>
   <text x="361.8" y="154" fill="#6b6864" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5">opened</text>
   <line x1="503.20000000000005" y1="74" x2="503.20000000000005" y2="156" stroke="#dedad4"/>
-  <text x="519.2" y="130" fill="#121212" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="-1.5">2</text>
+  <text x="519.2" y="130" fill="#121212" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="44" font-weight="700" letter-spacing="-1.5">3</text>
   <text x="520.2" y="84" fill="#121212" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600">Merged upstream</text>
   <text x="520.2" y="154" fill="#6b6864" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5">into 200+★ repos</text>
   <line x1="661.6" y1="74" x2="661.6" y2="156" stroke="#dedad4"/>
