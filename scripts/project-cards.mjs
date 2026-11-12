@@ -4,6 +4,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 
 const PROJECTS = [
   { name: 'goraz', blurb: 'Encrypted secrets, tokens and passwords for Go. No server.', lang: 'Go', color: '#00ADD8' },
+  { name: 'kabot', blurb: 'Website message box to Telegram and Bale on one Worker.', lang: 'TypeScript', color: '#3178C6' },
   { name: 'shop-api', blurb: 'Coffee shop REST API with auth, orders and OpenAPI docs.', lang: 'TypeScript', color: '#3178C6' },
 ];
 const THEMES = {

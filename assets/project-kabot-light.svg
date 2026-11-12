@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="432" height="128" viewBox="0 0 432 128" role="img" aria-label="kabot">
+  <rect width="432" height="128" rx="18" fill="#f3f1ee"/>
+  <rect x="0.5" y="0.5" width="431" height="127" rx="17.5" fill="none" stroke="#dedad4"/>
+  <svg x="22" y="24" width="76" height="76" viewBox="0 0 256 256"><path fill="#121212" d="M92.0 209.7L123.5 187.7L30.6 167.2ZM133.8 189.0L197.6 158.0L169.9 208.6L103.5 210.2ZM152.7 90.6L194.9 104.7L202.1 148.0L136.7 179.8ZM210.0 68.9L229.3 78.6L205.2 83.4Z"/><path fill="#d23a2c" d="M48.9 47.5L146.1 88.1L130.2 176.5Z"/><path fill="#121212" fill-rule="evenodd" d="M177.2 52.5L203.9 65.9L195.6 97.5L155.5 84.1ZM178 66H191V79H178Z"/></svg>
+  <text x="112" y="44" fill="#121212" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.4">kabot</text>
+  <text x="112" y="70" fill="#6b6864" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14">Website message box to Telegram</text><text x="112" y="89" fill="#6b6864" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14">and Bale on one Worker.</text>
+  <circle cx="327" cy="39" r="5" fill="#3178C6"/>
+  <text x="410" y="44" text-anchor="end" fill="#6b6864" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">TypeScript</text>
+</svg>

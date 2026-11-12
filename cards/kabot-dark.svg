@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <rect width="1280" height="640" fill="#141414"/>
+  <rect x="28" y="28" width="1224" height="584" rx="32" fill="none" stroke="#2a2826" stroke-width="2"/>
+  <path d="M108 95 Q108 108 121 108 Q108 108 108 121 Q108 108 95 108 Q108 108 108 95 Z" fill="#e0473a"/>
+  <text x="132" y="116" fill="#9a958f" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22">mtnaskari / carrier pigeon + bot</text>
+  <text x="90" y="258" fill="#f3f1ee" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="150" font-weight="800" letter-spacing="-6">kabot</text>
+  <text x="544" y="206" fill="#9a958f" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="22"><tspan font-family="Vazirmatn, Tahoma, 'Segoe UI', sans-serif" font-size="26">کبوتر</tspan><tspan fill="#e0473a"> + </tspan><tspan>bot</tspan></text>
+  <text x="96" y="330" fill="#d6d2cc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30">A website message box that delivers to</text>
+  <text x="96" y="372" fill="#d6d2cc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30">Telegram and Bale, running on a single</text>
+  <text x="96" y="414" fill="#d6d2cc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30">Cloudflare Worker.</text>
+  <rect x="96" y="512" width="156.8" height="52" rx="26" fill="#1e1d1c" stroke="#2a2826"/>
+  <g transform="translate(114 525) scale(1.1)"><path d="m8.213.063 8.879 12.136-8.67 11.739h2.476l8.665-11.735-8.89-12.14Zm4.728 0 9.02 11.992-9.018 11.883h2.496L24 12.656v-1.199L15.434.063ZM7.178 2.02.01 11.398l-.01 1.2 7.203 9.644 1.238-1.676-6.396-8.556 6.361-8.313Z" fill="#F38020"/></g>
+  <text x="148" y="545" fill="#f3f1ee" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" font-weight="600">Workers</text>
+  <rect x="264.8" y="512" width="194" height="52" rx="26" fill="#1e1d1c" stroke="#2a2826"/>
+  <g transform="translate(282.8 525) scale(1.1)"><path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z" fill="#3178C6"/></g>
+  <text x="316.8" y="545" fill="#f3f1ee" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" font-weight="600">TypeScript</text>
+  <rect x="470.8" y="512" width="169.2" height="52" rx="26" fill="#1e1d1c" stroke="#2a2826"/>
+  <g transform="translate(488.8 525) scale(1.1)"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" fill="#26A5E4"/></g>
+  <text x="522.8" y="545" fill="#f3f1ee" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="21" font-weight="600">Telegram</text>
+  <rect x="652" y="512" width="82.4" height="52" rx="26" fill="#1e1d1c" stroke="#2a2826"/>
+  
+  <text x="670" y="545" fill="#f3f1ee" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="400">Bale</text>
+  <rect x="746.4" y="512" width="59.2" height="52" rx="26" fill="#1e1d1c" stroke="#2a2826"/>
+  
+  <text x="764.4" y="545" fill="#f3f1ee" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="19" font-weight="400">D1</text>
+  <rect x="842" y="96" width="340" height="340" rx="44" fill="#1b1a19" stroke="#2a2826" stroke-width="2"/>
+  <svg x="882" y="136" width="260" height="260" viewBox="0 0 256 256"><path fill="#f3f1ee" d="M92.0 209.7L123.5 187.7L30.6 167.2ZM133.8 189.0L197.6 158.0L169.9 208.6L103.5 210.2ZM152.7 90.6L194.9 104.7L202.1 148.0L136.7 179.8ZM210.0 68.9L229.3 78.6L205.2 83.4Z"/><path fill="#d23a2c" d="M48.9 47.5L146.1 88.1L130.2 176.5Z"/><path fill="#f3f1ee" fill-rule="evenodd" d="M177.2 52.5L203.9 65.9L195.6 97.5L155.5 84.1ZM178 66H191V79H178Z"/></svg>
+  <path d="M1182 420 Q1182 436 1198 436 Q1182 436 1182 452 Q1182 436 1166 436 Q1182 436 1182 420 Z" fill="#e0473a"/>
+</svg>
