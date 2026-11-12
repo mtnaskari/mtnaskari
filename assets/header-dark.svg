@@ -1,7 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="220" viewBox="0 0 880 220" role="img" aria-label="Matin Askari, Software Engineer, Backend and Systems">
-  <rect width="880" height="220" rx="18" fill="#161616"/>
-  <path d="M62 50 Q62 70 82 70 Q62 70 62 90 Q62 70 42 70 Q62 70 62 50 Z" fill="#d23a2c"/>
-  <text x="44" y="150" fill="#f3f1ee" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="54" font-weight="600" letter-spacing="-1.6">Matin Askari</text>
-  <text x="46" y="186" fill="#9a958f" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" letter-spacing="0.2">Software Engineer · Backend &amp; Systems</text>
-  <text x="750" y="186" fill="#9a958f" font-family="Vazirmatn, Tahoma, 'Segoe UI', sans-serif" font-size="18">متین عسکری</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="230" viewBox="0 0 880 230" role="img" aria-label="Matin Askari, Software Engineer">
+  <style>
+    .spin { transform-box: fill-box; transform-origin: center; animation: spin 14s linear infinite; }
+    .role { opacity: 0; animation: role 9s infinite; }
+    .r1 { animation-delay: 3s; } .r2 { animation-delay: 6s; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes role { 0% { opacity: 0; transform: translateY(6px); } 4%, 30% { opacity: 1; transform: none; } 34%, 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .spin { animation: none; } .role { animation: none; } .r0 { opacity: 1; } }
+  </style>
+  <rect width="880" height="230" rx="20" fill="#161616"/>
+  <rect x="0.5" y="0.5" width="879" height="229" rx="19.5" fill="none" stroke="#2c2a28"/>
+  <path class="spin" d="M66 48 Q66 64 82 64 Q66 64 66 80 Q66 64 50 64 Q66 64 66 48 Z" fill="#e0473a"/>
+  <path class="" d="M820 171 Q820 178 827 178 Q820 178 820 185 Q820 178 813 178 Q820 178 820 171 Z" fill="#2c2a28"/>
+  <text x="44" y="146" fill="#f3f1ee" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="58" font-weight="700" letter-spacing="-2">Matin Askari</text>
+  <text x="46" y="184" fill="#9a958f" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">Software Engineer</text>
+  <text x="208" y="184" fill="#e0473a" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">/</text>
+  <text class="role r0" x="228" y="184" fill="#f3f1ee" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">Backend &amp; Systems</text>
+  <text class="role r1" x="228" y="184" fill="#f3f1ee" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">Node.js · Go · PostgreSQL</text>
+  <text class="role r2" x="228" y="184" fill="#f3f1ee" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15">Open-source contributor</text>
+  <text x="836" y="62" text-anchor="end" fill="#9a958f" font-family="Vazirmatn, Tahoma, 'Segoe UI', sans-serif" font-size="17">متین عسکری</text>
 </svg>

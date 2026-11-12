@@ -1,10 +1,39 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img alt="Matin Askari — Software Engineer · Backend & Systems" src="assets/header-light.svg" width="100%">
+  <img alt="Matin Askari — Software Engineer" src="assets/header-light.svg" width="100%">
 </picture>
 
-Building systems that ship: APIs, web apps and messaging bots, kept clear, reliable and easy to extend.
+### Hi, I'm Matin Askari · متین عسکری
 
-<sub>Merged upstream lately · <a href="https://github.com/redis/go-redis/pull/4278">go-redis</a> · <a href="https://github.com/testcontainers/testcontainers-go/pull/4094">testcontainers-go</a></sub>
+Software engineer from Isfahan, working on backends, systems and the occasional messaging bot: APIs, web apps and services kept clear, reliable and easy to extend. Lately I spend my spare hours fixing bugs in open-source Go and Node.js projects.
 
-<sub><a href="https://www.askari.pro">askari.pro</a></sub>
+<a href="https://www.askari.pro/en"><img alt="askari.pro" src="https://img.shields.io/badge/askari.pro-d23a2c?style=flat-square&logo=googlechrome&logoColor=white"></a>
+<a href="https://www.askari.pro/fa"><img alt="askari.pro/fa" src="https://img.shields.io/badge/%D9%81%D8%A7%D8%B1%D8%B3%DB%8C-121212?style=flat-square"></a>
+<a href="https://www.linkedin.com/in/mtnaskari"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-121212?style=flat-square&logo=linkedin&logoColor=white"></a>
+<a href="https://x.com/iwasjustcoding"><img alt="X" src="https://img.shields.io/badge/@iwasjustcoding-121212?style=flat-square&logo=x&logoColor=white"></a>
+
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
+  <img alt="GitHub stats: commits, contributions, pull requests and stars" src="assets/stats-light.svg" width="100%">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/oss-dark.svg">
+  <img alt="Pull requests merged into open-source projects" src="assets/oss-light.svg" width="100%">
+</picture>
+
+#### Stack
+
+<img alt="Node.js" src="https://img.shields.io/badge/Node.js-121212?style=for-the-badge&logo=nodedotjs&logoColor=5FA04E"> <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-121212?style=for-the-badge&logo=typescript&logoColor=3178C6"> <img alt="NestJS" src="https://img.shields.io/badge/NestJS-121212?style=for-the-badge&logo=nestjs&logoColor=E0234E"> <img alt="Express" src="https://img.shields.io/badge/Express-121212?style=for-the-badge&logo=express&logoColor=white"> <img alt="Fastify" src="https://img.shields.io/badge/Fastify-121212?style=for-the-badge&logo=fastify&logoColor=white"> <img alt="Go" src="https://img.shields.io/badge/Go-121212?style=for-the-badge&logo=go&logoColor=00ADD8">
+<img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-121212?style=for-the-badge&logo=postgresql&logoColor=4169E1"> <img alt="MongoDB" src="https://img.shields.io/badge/MongoDB-121212?style=for-the-badge&logo=mongodb&logoColor=47A248"> <img alt="Redis" src="https://img.shields.io/badge/Redis-121212?style=for-the-badge&logo=redis&logoColor=FF4438"> <img alt="Docker" src="https://img.shields.io/badge/Docker-121212?style=for-the-badge&logo=docker&logoColor=2496ED"> <img alt="React" src="https://img.shields.io/badge/React-121212?style=for-the-badge&logo=react&logoColor=61DAFB"> <img alt="Next.js" src="https://img.shields.io/badge/Next.js-121212?style=for-the-badge&logo=nextdotjs&logoColor=white">
+
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/snake-dark.svg">
+  <img alt="Contribution graph eaten by a snake" src="assets/snake-light.svg" width="100%">
+</picture>
+
+<sub>Cards are rebuilt every day from live GitHub data by <a href="scripts/build-cards.mjs">a small script</a>.</sub>

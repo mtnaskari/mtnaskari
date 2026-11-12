@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="186" viewBox="0 0 880 186" role="img" aria-label="Pull requests merged into open-source projects">
+  <rect width="880" height="186" rx="20" fill="#161616"/>
+  <rect x="0.5" y="0.5" width="879" height="185" rx="19.5" fill="none" stroke="#2c2a28"/>
+  <path class="" d="M52 34 Q52 40 58 40 Q52 40 52 46 Q52 40 46 40 Q52 40 52 34 Z" fill="#e0473a"/>
+  <text x="66" y="45" fill="#9a958f" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1.5">MERGED UPSTREAM</text>
+  <line x1="44" y1="76" x2="836" y2="76" stroke="#2c2a28"/>
+  <text x="44" y="105" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17"><tspan fill="#9a958f">redis/</tspan><tspan fill="#f3f1ee" font-weight="700">go-redis</tspan></text>
+  <text x="836" y="105" text-anchor="end" fill="#9a958f" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5">refactor(command): track key-spec fields in a bitma…  <tspan fill="#e0473a">★ 22k</tspan></text>
+  <line x1="44" y1="122" x2="836" y2="122" stroke="#2c2a28"/>
+  <text x="44" y="151" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="17"><tspan fill="#9a958f">testcontainers/</tspan><tspan fill="#f3f1ee" font-weight="700">testcontainers-go</tspan></text>
+  <text x="836" y="151" text-anchor="end" fill="#9a958f" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12.5">feat(dynamodb): add WithInMemory option  <tspan fill="#e0473a">★ 5k</tspan></text>
+</svg>
