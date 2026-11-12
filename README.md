@@ -7,13 +7,14 @@
 
 Software engineer from Isfahan, working on backends, systems and the occasional messaging bot: APIs, web apps and services kept clear, reliable and easy to extend. Lately I spend my spare hours fixing bugs in open-source Go and Node.js projects. Currently building [goraz](https://github.com/mtnaskari/goraz), an encrypted secrets store for Go.
 
-<a href="https://www.askari.pro/en"><img alt="askari.pro" src="https://img.shields.io/badge/askari.pro-d23a2c?style=flat-square&logo=googlechrome&logoColor=white"></a>
-<a href="https://www.askari.pro/fa"><img alt="askari.pro/fa" src="https://img.shields.io/badge/%D9%81%D8%A7%D8%B1%D8%B3%DB%8C-121212?style=flat-square"></a>
-<a href="https://www.linkedin.com/in/mtnaskari"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-121212?style=flat-square&logo=linkedin&logoColor=white"></a>
-<a href="https://x.com/iwasjustcoding"><img alt="X" src="https://img.shields.io/badge/@iwasjustcoding-121212?style=flat-square&logo=x&logoColor=white"></a>
+<a href="https://www.askari.pro/en"><img alt="Website" src="https://img.shields.io/badge/askari.pro-portfolio-d23a2c?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=2b2a28"></a>
+<a href="https://www.askari.pro/fa"><img alt="Persian website" src="https://img.shields.io/badge/askari.pro-persian-d23a2c?style=for-the-badge&logo=googletranslate&logoColor=white&labelColor=2b2a28"></a>
+<a href="https://www.askari.pro/en/blog"><img alt="Blog" src="https://img.shields.io/badge/blog-read-d23a2c?style=for-the-badge&logo=rss&logoColor=white&labelColor=2b2a28"></a>
+<a href="https://www.linkedin.com/in/mtnaskari"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-mtnaskari-0A66C2?style=for-the-badge&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjQuOTI1IDIuMDY0IDIuMDYzIDAgMS4xMzktLjkyNSAyLjA2NS0yLjA2NCAyLjA2NXptMS43ODIgMTMuMDE5SDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8%2BPC9zdmc%2B&labelColor=2b2a28"></a>
+<a href="https://x.com/iwasjustcoding"><img alt="X" src="https://img.shields.io/badge/X-iwasjustcoding-3a3a3a?style=for-the-badge&logo=x&logoColor=white&labelColor=2b2a28"></a>
+<a href="https://www.instagram.com/mtnaskari/"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-mtnaskari-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=2b2a28"></a>
 <br>
-<a href="https://github.com/mtnaskari?tab=followers"><img alt="Followers" src="https://img.shields.io/github/followers/mtnaskari?style=flat-square&label=followers&labelColor=121212&color=d23a2c&logo=github&logoColor=white"></a>
-<a href="https://github.com/mtnaskari?tab=repositories"><img alt="Stars" src="https://img.shields.io/github/stars/mtnaskari?style=flat-square&label=stars&labelColor=121212&color=d23a2c&logo=githubsponsors&logoColor=white"></a>
+<a href="https://github.com/mtnaskari?tab=repositories"><img alt="Stars" src="https://img.shields.io/github/stars/mtnaskari?style=flat-square&label=%E2%98%85%20stars&labelColor=121212&color=d23a2c"></a>
 <img alt="Profile views" src="https://komarev.com/ghpvc/?username=mtnaskari&label=profile%20views&color=d23a2c&style=flat-square">
 
 <br>
