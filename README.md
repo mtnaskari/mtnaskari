@@ -18,6 +18,10 @@ Software engineer from Isfahan, working on backends, systems and the occasional 
 
 <br>
 
+#### <samp>Projects</samp>
+
+<a href="https://github.com/mtnaskari/goraz"><picture><source media="(prefers-color-scheme: dark)" srcset="cards/goraz-dark.svg"><img alt="goraz: encrypted secrets, API tokens and passwords for Go services and the command line" src="cards/goraz-light.svg" width="100%"></picture></a>
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
   <img alt="GitHub stats: commits, contributions, pull requests and stars" src="assets/stats-light.svg" width="100%">
