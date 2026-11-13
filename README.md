@@ -36,6 +36,7 @@ Software engineer from Isfahan, working on backends, systems and the occasional 
 #### <samp>Merged upstream</samp>
 
 <!-- OSS:START -->
+- [**agenda/agenda**](https://github.com/agenda/agenda) <samp>★ 9.7k</samp> &nbsp; [fix(postgres-backend): update only the row found by unique() #1816](https://github.com/agenda/agenda/pull/1816)
 - [**nestjs/nest**](https://github.com/nestjs/nest) <samp>★ 77k</samp> &nbsp; [fix(ws): leave upgrade requests for other paths to other listeners #18501](https://github.com/nestjs/nest/pull/18501)
 - [**redis/go-redis**](https://github.com/redis/go-redis) <samp>★ 22k</samp> &nbsp; [refactor(command): track key-spec fields in a bitmask #4278](https://github.com/redis/go-redis/pull/4278)
 - [**testcontainers/testcontainers-go**](https://github.com/testcontainers/testcontainers-go) <samp>★ 5k</samp> &nbsp; [feat(dynamodb): add WithInMemory option #4094](https://github.com/testcontainers/testcontainers-go/pull/4094)
