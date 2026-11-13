@@ -45,10 +45,10 @@ Software engineer from Isfahan, working on backends, systems and the occasional 
 #### <samp>Latest writing</samp>
 
 <!-- WRITING:START -->
+- <samp>2026-11-13</samp> &nbsp; [AI Coding Agents Are Leaking API Keys to GitHub. Is Yours One of Them?](https://www.askari.pro/en/blog/ai-coding-agents-leaking-secrets)
 - <samp>2026-11-06</samp> &nbsp; [Building a Telegram or Bale Bot for Your Business: From Idea to Payments](https://www.askari.pro/en/blog/build-telegram-bale-business-bot)
 - <samp>2026-11-01</samp> &nbsp; [Software Development Contracts: 12 Clauses That Prevent Disputes](https://www.askari.pro/en/blog/software-development-contract-clauses)
 - <samp>2026-10-26</samp> &nbsp; [What Is MCP? A Simple Guide to the Model Context Protocol and Its Security](https://www.askari.pro/en/blog/what-is-mcp)
-- <samp>2026-10-20</samp> &nbsp; [Software Project Contract and Delivery Checklist](https://www.askari.pro/en/blog/software-project-contract-checklist)
 <!-- WRITING:END -->
 
 #### <samp>Stack</samp>
