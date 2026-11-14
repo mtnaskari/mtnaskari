@@ -4,15 +4,15 @@
   <rect x="0.5" y="0.5" width="431" height="199" rx="19.5" fill="none" stroke="#dedad4"/>
   <path class="" d="M42 32 Q42 38 48 38 Q42 38 42 44 Q42 38 36 38 Q42 38 42 32 Z" fill="#d23a2c"/>
   <text x="56" y="43" fill="#6b6864" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="1.5">LANGUAGES</text>
-  <g clip-path="url(#bar)"><rect x="36" y="64" width="204.22719556287015" height="12" fill="#d23a2c" fill-opacity="1"/><rect x="240.22719556287015" y="64" width="102.93311907939922" height="12" fill="#121212" fill-opacity="1"/><rect x="343.1603146422694" y="64" width="52.83968535773063" height="12" fill="#6b6864" fill-opacity="1"/></g>
+  <g clip-path="url(#bar)"><rect x="36" y="64" width="223.7909465620277" height="12" fill="#d23a2c" fill-opacity="1"/><rect x="259.79094656202767" y="64" width="89.80745144200993" height="12" fill="#121212" fill-opacity="1"/><rect x="349.5983980040376" y="64" width="46.401601995962345" height="12" fill="#6b6864" fill-opacity="1"/></g>
   <circle cx="41" cy="112" r="5" fill="#d23a2c" fill-opacity="1"/>
   <text x="54" y="116" fill="#121212" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600">Go</text>
-  <text x="204" y="116" text-anchor="end" fill="#6b6864" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">56.7%</text>
+  <text x="204" y="116" text-anchor="end" fill="#6b6864" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">62.2%</text>
   <circle cx="225" cy="112" r="5" fill="#121212" fill-opacity="1"/>
   <text x="238" y="116" fill="#121212" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600">TypeScript</text>
-  <text x="388" y="116" text-anchor="end" fill="#6b6864" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">28.6%</text>
+  <text x="388" y="116" text-anchor="end" fill="#6b6864" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">24.9%</text>
   <circle cx="41" cy="142" r="5" fill="#6b6864" fill-opacity="1"/>
   <text x="54" y="146" fill="#121212" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" font-weight="600">JavaScript</text>
-  <text x="204" y="146" text-anchor="end" fill="#6b6864" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">14.7%</text>
+  <text x="204" y="146" text-anchor="end" fill="#6b6864" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">12.9%</text>
   <text x="36" y="188" fill="#6b6864" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">by code size · my own repositories</text>
 </svg>
