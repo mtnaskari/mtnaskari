@@ -36,19 +36,19 @@ Software engineer from Isfahan, working on backends, systems and the occasional 
 #### <samp>Merged upstream</samp>
 
 <!-- OSS:START -->
+- [**uptrace/bun**](https://github.com/uptrace/bun) <samp>★ 5k</samp> &nbsp; [chore(deps): upgrade modernc.org/sqlite #1470](https://github.com/uptrace/bun/pull/1470)
+- [**uptrace/bun**](https://github.com/uptrace/bun) <samp>★ 5k</samp> &nbsp; [chore(release): pin conventional-changelog and its angular preset #1471](https://github.com/uptrace/bun/pull/1471)
 - [**agenda/agenda**](https://github.com/agenda/agenda) <samp>★ 9.7k</samp> &nbsp; [fix(postgres-backend): update only the row found by unique() #1816](https://github.com/agenda/agenda/pull/1816)
 - [**nestjs/nest**](https://github.com/nestjs/nest) <samp>★ 77k</samp> &nbsp; [fix(ws): leave upgrade requests for other paths to other listeners #18501](https://github.com/nestjs/nest/pull/18501)
-- [**redis/go-redis**](https://github.com/redis/go-redis) <samp>★ 22k</samp> &nbsp; [refactor(command): track key-spec fields in a bitmask #4278](https://github.com/redis/go-redis/pull/4278)
-- [**testcontainers/testcontainers-go**](https://github.com/testcontainers/testcontainers-go) <samp>★ 5k</samp> &nbsp; [feat(dynamodb): add WithInMemory option #4094](https://github.com/testcontainers/testcontainers-go/pull/4094)
 <!-- OSS:END -->
 
 #### <samp>Latest writing</samp>
 
 <!-- WRITING:START -->
+- <samp>2026-11-18</samp> &nbsp; [From Vibe Coding to Spec-Driven Development: Why the Spec Is the New Source Code](https://www.askari.pro/en/blog/spec-driven-development)
 - <samp>2026-11-15</samp> &nbsp; [Meta Bought a Tool for Running Coding Agents in Parallel. The Hard Part Is Still Review](https://www.askari.pro/en/blog/parallel-ai-coding-agents-review)
 - <samp>2026-11-13</samp> &nbsp; [AI Coding Agents Are Leaking API Keys to GitHub. Is Yours One of Them?](https://www.askari.pro/en/blog/ai-coding-agents-leaking-secrets)
 - <samp>2026-11-06</samp> &nbsp; [Building a Telegram or Bale Bot for Your Business: From Idea to Payments](https://www.askari.pro/en/blog/build-telegram-bale-business-bot)
-- <samp>2026-11-01</samp> &nbsp; [Software Development Contracts: 12 Clauses That Prevent Disputes](https://www.askari.pro/en/blog/software-development-contract-clauses)
 <!-- WRITING:END -->
 
 #### <samp>Stack</samp>
