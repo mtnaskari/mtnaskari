@@ -104,17 +104,24 @@ async function loadStats() {
   const prs = await gql(`query($q: String!) { search(query: $q, type: ISSUE) { issueCount } }`, {
     q: `is:pr author:${LOGIN}`,
   });
-  const upstream = await gql(
-    `query($q: String!) {
-      search(query: $q, type: ISSUE, first: 50) {
-        issueCount
-        nodes { ... on PullRequest { number title url mergedAt repository { nameWithOwner stargazerCount url } } }
-      }
-    }`,
-    { q: `is:pr is:merged author:${LOGIN} -user:${LOGIN} sort:updated-desc` },
-  );
+  // Every merged upstream PR, page by page, so the README lists all of them.
+  const merged = [];
+  for (let after = null; ; ) {
+    const page = await gql(
+      `query($q: String!, $after: String) {
+        search(query: $q, type: ISSUE, first: 100, after: $after) {
+          pageInfo { hasNextPage endCursor }
+          nodes { ... on PullRequest { number title url mergedAt repository { nameWithOwner stargazerCount url } } }
+        }
+      }`,
+      { q: `is:pr is:merged author:${LOGIN} -user:${LOGIN} sort:updated-desc`, after },
+    );
+    merged.push(...page.search.nodes);
+    if (!page.search.pageInfo.hasNextPage) break;
+    after = page.search.pageInfo.endCursor;
+  }
 
-  const notable = upstream.search.nodes
+  const notable = merged
     .filter(pr => pr.repository.stargazerCount >= MIN_UPSTREAM_STARS)
     .sort((a, b) => b.mergedAt.localeCompare(a.mergedAt));
 
@@ -124,7 +131,7 @@ async function loadStats() {
     pullRequests: prs.search.issueCount,
     mergedUpstream: notable.length,
     stars: user.repositories.nodes.reduce((sum, r) => sum + r.stargazerCount, 0),
-    notable: notable.slice(0, 4),
+    notable,
     streak: { current, longest, allContributions, since: new Date(user.createdAt).getUTCFullYear(), last: past.slice(-30) },
     languages,
   };
