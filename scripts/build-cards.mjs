@@ -272,10 +272,19 @@ function languagesCard(t, s) {
 }
 
 function updateUpstream(readme, s) {
-  const rows = s.notable.map(
-    pr =>
-      `- [**${pr.repository.nameWithOwner}**](${pr.repository.url}) <samp>★ ${compact(pr.repository.stargazerCount)}</samp> &nbsp; [${pr.title.replace(/[[\]]/g, '')} #${pr.number}](${pr.url})`,
-  );
+  // One entry per project, newest merge first; a project with several merged PRs lists them under it.
+  const groups = new Map();
+  for (const pr of s.notable) {
+    const key = pr.repository.nameWithOwner;
+    if (!groups.has(key)) groups.set(key, { repo: pr.repository, prs: [] });
+    groups.get(key).prs.push(pr);
+  }
+  const link = pr => `[${pr.title.replace(/[[\]]/g, '')} #${pr.number}](${pr.url})`;
+  const rows = [...groups.values()].map(({ repo, prs }) => {
+    const head = `- [**${repo.nameWithOwner}**](${repo.url}) <samp>★ ${compact(repo.stargazerCount)}</samp>`;
+    if (prs.length === 1) return `${head} &nbsp; ${link(prs[0])}`;
+    return [`${head} &nbsp; <samp>${prs.length} merged</samp>`, ...prs.map(pr => `  - ${link(pr)}`)].join('\n');
+  });
   if (!rows.length) return readme;
   return readme.replace(/(<!-- OSS:START -->)[\s\S]*?(<!-- OSS:END -->)/, `$1\n${rows.join('\n')}\n$2`);
 }
