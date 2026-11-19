@@ -45,10 +45,10 @@ Software engineer from Isfahan, working on backends, systems and the occasional 
 #### <samp>Latest writing</samp>
 
 <!-- WRITING:START -->
+- <samp>2026-11-19</samp> &nbsp; [How Much Does a Website Cost in 2026? Prices by Type](https://www.askari.pro/en/blog/website-design-cost)
 - <samp>2026-11-18</samp> &nbsp; [From Vibe Coding to Spec-Driven Development: Why the Spec Is the New Source Code](https://www.askari.pro/en/blog/spec-driven-development)
 - <samp>2026-11-15</samp> &nbsp; [Meta Bought a Tool for Running Coding Agents in Parallel. The Hard Part Is Still Review](https://www.askari.pro/en/blog/parallel-ai-coding-agents-review)
 - <samp>2026-11-13</samp> &nbsp; [AI Coding Agents Are Leaking API Keys to GitHub. Is Yours One of Them?](https://www.askari.pro/en/blog/ai-coding-agents-leaking-secrets)
-- <samp>2026-11-06</samp> &nbsp; [Building a Telegram or Bale Bot for Your Business: From Idea to Payments](https://www.askari.pro/en/blog/build-telegram-bale-business-bot)
 <!-- WRITING:END -->
 
 #### <samp>Stack</samp>
