@@ -36,6 +36,7 @@ Software engineer from Isfahan, working on backends, systems and the occasional 
 #### <samp>Merged upstream</samp>
 
 <!-- OSS:START -->
+- [**timgit/pg-boss**](https://github.com/timgit/pg-boss) <samp>★ 4.2k</samp> &nbsp; [add getSubscriptions() to list event subscriptions #997](https://github.com/timgit/pg-boss/pull/997)
 - [**nestjs/nest**](https://github.com/nestjs/nest) <samp>★ 77k</samp> &nbsp; <samp>3 merged</samp>
   - [fix(common): keep an overriding @Res() from inheriting passthrough #18617](https://github.com/nestjs/nest/pull/18617)
   - [fix(testing): apply the logger and forceConsole options as NestFactory does #18618](https://github.com/nestjs/nest/pull/18618)
@@ -51,10 +52,10 @@ Software engineer from Isfahan, working on backends, systems and the occasional 
 #### <samp>Latest writing</samp>
 
 <!-- WRITING:START -->
+- <samp>2026-11-21</samp> &nbsp; [Is It Still Worth Becoming a Software Developer? Honest Advice for Juniors in the AI Era](https://www.askari.pro/en/blog/future-of-junior-developers)
 - <samp>2026-11-19</samp> &nbsp; [How Much Does a Website Cost in 2026? Prices by Type](https://www.askari.pro/en/blog/website-design-cost)
 - <samp>2026-11-18</samp> &nbsp; [From Vibe Coding to Spec-Driven Development: Why the Spec Is the New Source Code](https://www.askari.pro/en/blog/spec-driven-development)
 - <samp>2026-11-15</samp> &nbsp; [Meta Bought a Tool for Running Coding Agents in Parallel. The Hard Part Is Still Review](https://www.askari.pro/en/blog/parallel-ai-coding-agents-review)
-- <samp>2026-11-13</samp> &nbsp; [AI Coding Agents Are Leaking API Keys to GitHub. Is Yours One of Them?](https://www.askari.pro/en/blog/ai-coding-agents-leaking-secrets)
 <!-- WRITING:END -->
 
 #### <samp>Stack</samp>
