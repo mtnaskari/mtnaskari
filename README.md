@@ -52,10 +52,10 @@ Software engineer from Isfahan, working on backends, systems and the occasional 
 #### <samp>Latest writing</samp>
 
 <!-- WRITING:START -->
+- <samp>2026-11-27</samp> &nbsp; [Claude Code vs Cursor vs Codex: Price and When to Use Each (2026)](https://www.askari.pro/en/blog/claude-code-vs-cursor-vs-codex)
 - <samp>2026-11-24</samp> &nbsp; [How to Build a Telegram (and Bale) Bot With Node.js: Step by Step](https://www.askari.pro/en/blog/how-to-build-a-telegram-bot)
 - <samp>2026-11-21</samp> &nbsp; [Is It Still Worth Becoming a Software Developer? Honest Advice for Juniors in the AI Era](https://www.askari.pro/en/blog/future-of-junior-developers)
 - <samp>2026-11-19</samp> &nbsp; [How Much Does a Website Cost in 2026? Prices by Type](https://www.askari.pro/en/blog/website-design-cost)
-- <samp>2026-11-18</samp> &nbsp; [From Vibe Coding to Spec-Driven Development: Why the Spec Is the New Source Code](https://www.askari.pro/en/blog/spec-driven-development)
 <!-- WRITING:END -->
 
 #### <samp>Stack</samp>
