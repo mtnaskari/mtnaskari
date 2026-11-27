@@ -36,6 +36,7 @@ Software engineer from Isfahan, working on backends, systems and the occasional 
 #### <samp>Merged upstream</samp>
 
 <!-- OSS:START -->
+- [**gabriel-vasile/mimetype**](https://github.com/gabriel-vasile/mimetype) <samp>★ 2k</samp> &nbsp; [arrow: add detection for Apache Arrow IPC files #859](https://github.com/gabriel-vasile/mimetype/pull/859)
 - [**timgit/pg-boss**](https://github.com/timgit/pg-boss) <samp>★ 4.2k</samp> &nbsp; [add getSubscriptions() to list event subscriptions #997](https://github.com/timgit/pg-boss/pull/997)
 - [**nestjs/nest**](https://github.com/nestjs/nest) <samp>★ 77k</samp> &nbsp; <samp>3 merged</samp>
   - [fix(common): keep an overriding @Res() from inheriting passthrough #18617](https://github.com/nestjs/nest/pull/18617)
